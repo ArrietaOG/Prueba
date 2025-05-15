@@ -1,0 +1,16 @@
+
+    input {
+      display: block;
+      margin: 10px 0;
+      padding: 8px;
+      width: 200px;
+    }
+    button {
+      padding: 8px 16px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-weight: bold;
+    }
