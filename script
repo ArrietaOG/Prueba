@@ -1,0 +1,23 @@
+let nombres = [];
+
+function guardarNombres() {
+  const n1 = document.getElementById("nombre1").value.trim();
+  const n2 = document.getElementById("nombre2").value.trim();
+  const n3 = document.getElementById("nombre3").value.trim();
+
+  if (n1 && n2 && n3) {
+    nombres = [n1, n2, n3];
+    alert("¡Nombres guardados correctamente!");
+  } else {
+    alert("Por favor, completa los tres campos.");
+  }
+}
+
+function mostrarNombres() {
+  const resultado = document.getElementById("resultado");
+  if (nombres.length === 3) {
+    resultado.innerHTML = "Nombres guardados: " + nombres.join(", ");
+  } else {
+    resultado.innerHTML = "No hay nombres guardados aún.";
+  }
+}
